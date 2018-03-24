@@ -16,6 +16,8 @@ public class ZNeffos {
         conn.getConexaoMySQL();
         
         conn.statusConection();
+        
+        System.out.println("Eu amo a Fernanda");
     }
     
 }
