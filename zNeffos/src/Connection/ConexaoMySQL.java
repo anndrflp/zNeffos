@@ -1,15 +1,10 @@
-package DAO;                   
- 
-  
+package Connection;                   
+
 //Classes necessárias para uso de Banco de dados //
  
 import java.sql.Connection;
- 
 import java.sql.DriverManager;
- 
 import java.sql.SQLException;
- 
-  
  
 //Início da classe de conexão//
  
@@ -23,15 +18,11 @@ public class ConexaoMySQL {
  
         }
  
-  
- 
 //Método de Conexão//
  
 public static java.sql.Connection getConexaoMySQL() {
  
         Connection connection = null;          //atributo do tipo Connection
- 
-  
  
 try {
  
@@ -40,17 +31,11 @@ try {
 String driverName = "com.mysql.jdbc.Driver";                        
 Class.forName(driverName);
  
-  
  
 // Configurando a nossa conexão com um banco de dados//
- 
-            String serverName = "localhost";    //caminho do servidor do BD
- 
-            String mydatabase = "zNeffos";        //nome do seu banco de dados
-            String stringConexao = "jdbc:mysql://localhost/zNeffos?autoReconnect=true&useSSL=false";
+
+String stringConexao = "jdbc:mysql://localhost/zNeffos?autoReconnect=true&useSSL=false";
             connection = DriverManager.getConnection(stringConexao, "sa", "orkut22");
- 
-  
  
             //Testa sua conexão//  
  
@@ -81,7 +66,6 @@ Class.forName(driverName);
         }
     }
  
-  
  
     //Método que retorna o status da sua conexão//
  
@@ -90,8 +74,6 @@ Class.forName(driverName);
         return status;
  
     }
- 
-   
  
    //Método que fecha sua conexão//
  
@@ -109,20 +91,12 @@ Class.forName(driverName);
  
         }
  
-  
- 
     }
  
-   
- 
    //Método que reinicia sua conexão//
- 
     public static java.sql.Connection ReiniciarConexao() {
  
         FecharConexao();
- 
-  
- 
         return ConexaoMySQL.getConexaoMySQL();
  
     }

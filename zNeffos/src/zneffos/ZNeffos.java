@@ -1,6 +1,6 @@
 
 package zneffos;
-import DAO.ConexaoMySQL;
+import Connection.ConexaoMySQL;
 /**
  *
  * @author Usuário
@@ -15,9 +15,7 @@ public class ZNeffos {
         ConexaoMySQL conn = new ConexaoMySQL();
         conn.getConexaoMySQL();
         
-        conn.statusConection();
-        
-        System.out.println("Eu amo a Fernanda");
+       
     }
     
 }
