@@ -38,7 +38,6 @@ try {
 // Carregando o JDBC Driver padrão
  
 String driverName = "com.mysql.jdbc.Driver";                        
- 
 Class.forName(driverName);
  
   
@@ -48,14 +47,8 @@ Class.forName(driverName);
             String serverName = "localhost";    //caminho do servidor do BD
  
             String mydatabase = "zNeffos";        //nome do seu banco de dados
- 
-            String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
- 
-            String username = "root";        //nome de um usuário de seu BD      
- 
-            String password = "";      //sua senha de acesso
- 
-            connection = DriverManager.getConnection(url, username, password);
+            String stringConexao = "jdbc:mysql://localhost/zNeffos?autoReconnect=true&useSSL=false";
+            connection = DriverManager.getConnection(stringConexao, "sa", "orkut22");
  
   
  
@@ -70,16 +63,10 @@ Class.forName(driverName);
                 status = ("STATUS--->Não foi possivel realizar conexão");
  
             }
- 
-  
- 
             return connection;
- 
-  
  
         } catch (ClassNotFoundException e) {  //Driver não encontrado
  
-  
  
             System.out.println("O driver expecificado nao foi encontrado.");
  
@@ -90,13 +77,8 @@ Class.forName(driverName);
 //Não conseguindo se conectar ao banco
  
             System.out.println("Nao foi possivel conectar ao Banco de Dados.");
- 
             return null;
- 
         }
- 
-  
- 
     }
  
   
