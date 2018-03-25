@@ -19,8 +19,7 @@ public class ZNeffos {
         ConexaoMySQL conn = new ConexaoMySQL();
         conn.getConexaoMySQL();
         
-       Phone pp = new Phone();
-       People pp1 = new People("", "", "", "");
+        
     }
     
 }
