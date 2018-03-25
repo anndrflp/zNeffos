@@ -1,10 +1,14 @@
 
 package zneffos;
 import Connection.ConexaoMySQL;
+import Objects.Adress.Adress;
+import Objects.People.People;
+import Objects.Phone.Phone;
+
 /**
- *
- * @author Usuário
- */
+ *  
+ * @    author Usuário
+ */ 
 public class ZNeffos {
 
     /**
@@ -15,7 +19,8 @@ public class ZNeffos {
         ConexaoMySQL conn = new ConexaoMySQL();
         conn.getConexaoMySQL();
         
-       
+       Phone pp = new Phone();
+       People pp1 = new People("", "", "", "");
     }
     
 }

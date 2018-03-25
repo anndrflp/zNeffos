@@ -3,19 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Objects;
+package Objects.Adress;
 
 /**
  *
  * @author Usuário
  */
-public class Adress extends People {
+public class Adress {
     
     private String adress = "";
     private String street = "";
     private String bairro = "";
     private String number = "";
-
+    
+    public Adress(String adress, String street, String bairro, String number) {
+        setAdress(adress);
+        setStreet(street);
+        setBairro(bairro);
+        setNumber(number);
+    }
+        
     public String getAdress() {
         return adress;
     }
@@ -47,9 +54,7 @@ public class Adress extends People {
     public void setNumber(String number) {
         this.number = number;
     }
-    
-    public Adress(String nome, String cpf, String telefone, String email) {
-        super(nome, cpf, telefone, email);
-    }
-    
+
+
+
 }
