@@ -4,7 +4,9 @@ import Connection.ConexaoMySQL;
 import Objects.Adress.Adress;
 import Objects.People.People;
 import Objects.Phone.Phone;
+import View.Page.Page;
 import java.sql.SQLException;
+
 
 /**
  *  
@@ -22,6 +24,9 @@ public class ZNeffos {
         
         String sql = "SELECT * FROM USUARIO";
         conn.Consult(sql);
+        Page rg = new Page();
+        rg.setVisible(true);
+        
     }
     
 }
