@@ -23,7 +23,7 @@ public class ZNeffos {
         conn.getConexaoMySQL();
         
         String sql = "SELECT * FROM USUARIO";
-        conn.Consult(sql);
+        //conn.Consult(sql);
         Page rg = new Page();
         rg.setVisible(true);
         
