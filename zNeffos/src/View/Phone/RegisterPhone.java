@@ -5,6 +5,9 @@
  */
 package View.Phone;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 /**
  *
  * @author Usuário
@@ -15,7 +18,14 @@ public class RegisterPhone extends javax.swing.JFrame {
      * Creates new form RegisterPhone
      */
     public RegisterPhone() {
+        centralizarComponente();
         initComponents();
+    }
+    
+    public void centralizarComponente() {
+        Dimension ds = Toolkit.getDefaultToolkit().getScreenSize();
+        Dimension dw = getSize();
+        setLocation((ds.width - dw.width) / 2, (ds.height - dw.height) / 2);
     }
 
     /**

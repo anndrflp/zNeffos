@@ -5,6 +5,9 @@
  */
 package View.Page;
 
+import View.ClipBoard.RegisterClipBoard;
+import View.Phone.RegisterPhone;
+
 /**
  *
  * @author Usuário
@@ -16,6 +19,7 @@ public class Page extends javax.swing.JFrame {
      */
     public Page() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -30,9 +34,9 @@ public class Page extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        BCadastrarTelefone = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
@@ -46,24 +50,39 @@ public class Page extends javax.swing.JFrame {
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Clip.png"))); // NOI18N
         jMenu2.setText("Ordem de serviço");
 
-        jMenu1.setText("Cadastrar");
-        jMenu2.add(jMenu1);
-
         jMenuItem1.setText("Consultar");
         jMenu2.add(jMenuItem1);
 
+        jMenuItem4.setText("Cadastrar");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem4);
+
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Mobile Phone.png"))); // NOI18N
-        jMenu3.setText("Telefone");
+        BCadastrarTelefone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Mobile Phone.png"))); // NOI18N
+        BCadastrarTelefone.setText("Telefone");
+        BCadastrarTelefone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BCadastrarTelefoneActionPerformed(evt);
+            }
+        });
 
         jMenuItem3.setText("Cadastrar");
-        jMenu3.add(jMenuItem3);
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        BCadastrarTelefone.add(jMenuItem3);
 
         jMenuItem2.setText("Consultar");
-        jMenu3.add(jMenuItem2);
+        BCadastrarTelefone.add(jMenuItem2);
 
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(BCadastrarTelefone);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Report.png"))); // NOI18N
         jMenu4.setText("Relatórios");
@@ -90,6 +109,29 @@ public class Page extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BCadastrarTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCadastrarTelefoneActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        RegisterPhone rp = new RegisterPhone();
+        rp.setVisible(true);
+    }//GEN-LAST:event_BCadastrarTelefoneActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        RegisterPhone rp = new RegisterPhone();
+        rp.setVisible(true);
+        
+        
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        RegisterClipBoard rcb = new RegisterClipBoard();
+        setVisible(false);
+        rcb.setVisible(true);
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,14 +169,14 @@ public class Page extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu BCadastrarTelefone;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     // End of variables declaration//GEN-END:variables
 }
