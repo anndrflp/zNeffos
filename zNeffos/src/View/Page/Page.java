@@ -5,7 +5,7 @@
  */
 package View.Page;
 
-import View.ClipBoard.RegisterClipBoard;
+import View.ClipBoard.ClipBoard;
 import View.Phone.RegisterPhone;
 
 /**
@@ -128,9 +128,9 @@ public class Page extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
-        RegisterClipBoard rcb = new RegisterClipBoard();
         setVisible(false);
-        rcb.setVisible(true);
+        ClipBoard cp = new ClipBoard();
+        cp.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
