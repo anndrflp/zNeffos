@@ -78,19 +78,19 @@ public class ConexaoMySQL {
         return ConexaoMySQL.getConexaoMySQL();
     }
     
-    public void Insert(String query) throws SQLException{
+    public static void Insert(String query) throws SQLException{
         Statement st = connection.createStatement();
         st.executeUpdate(query);
         st.close();
     }
     
-    public void Delete(String query) throws SQLException{
+    public static void Delete(String query) throws SQLException{
         Statement st = connection.createStatement();
         st.executeUpdate(query);
         st.close();
     }
     
-    public void Consult(String query) throws SQLException{
+    public static void Consult(String query) throws SQLException{
         Statement st = connection.createStatement();
         ResultSet rs = st.executeQuery(query);
         
