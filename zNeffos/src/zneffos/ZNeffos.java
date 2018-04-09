@@ -22,11 +22,15 @@ public class ZNeffos {
         ConexaoMySQL conn = new ConexaoMySQL();
         conn.getConexaoMySQL();
         
-        String sql = "SELECT * FROM USUARIO";
-        //conn.Consult(sql);
+       
+       
         Page rg = new Page();
         rg.setVisible(true);
         
+       
+        
+       
+       
     }
     
 }

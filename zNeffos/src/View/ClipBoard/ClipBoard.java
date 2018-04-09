@@ -413,8 +413,7 @@ public class ClipBoard extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         ClipBoard.this.dispose();
-        Page pg = new Page();
-        pg.setVisible(true);
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void JpessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JpessoaActionPerformed
