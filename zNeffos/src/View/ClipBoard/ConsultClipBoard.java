@@ -9,7 +9,9 @@ import java.awt.EventQueue;
 import java.beans.Beans;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import javax.persistence.RollbackException;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -68,7 +70,7 @@ public class ConsultClipBoard extends JPanel {
 
         masterScrollPane.setViewportView(masterTable);
 
-        saveButton.setText("Save");
+        saveButton.setText("Cancelar");
         saveButton.addActionListener(formListener);
 
         refreshButton.setText("Refresh");
@@ -93,7 +95,7 @@ public class ConsultClipBoard extends JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(masterScrollPane)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 627, Short.MAX_VALUE)
+                        .addGap(0, 611, Short.MAX_VALUE)
                         .addComponent(newButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(deleteButton)
@@ -228,11 +230,13 @@ public class ConsultClipBoard extends JPanel {
         /* Create and display the form */
         EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JFrame frame = new JFrame();
+                JDialog frame = new JDialog(new JFrame(), true);
                 frame.setContentPane(new ConsultClipBoard());
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
+                frame.setLocationRelativeTo(null);
                 frame.setVisible(true);
+                      
             }
         });
     }

@@ -5,6 +5,7 @@ import Objects.Adress.Adress;
 import Objects.People.People;
 import Objects.Phone.Phone;
 import View.Page.Page;
+import View.Start;
 import java.sql.SQLException;
 
 
@@ -23,9 +24,7 @@ public class ZNeffos {
         conn.getConexaoMySQL();
         
        
-       
-        Page rg = new Page();
-        rg.setVisible(true);
+       Start.main(null);
         
        
         
