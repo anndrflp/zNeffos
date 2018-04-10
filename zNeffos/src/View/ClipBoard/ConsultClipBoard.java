@@ -235,6 +235,7 @@ public class ConsultClipBoard extends JPanel {
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null);
+                frame.setResizable(false);
                 frame.setVisible(true);
                       
             }

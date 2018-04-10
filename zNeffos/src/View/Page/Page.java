@@ -7,6 +7,7 @@ package View.Page;
 
 import View.ClipBoard.ClipBoard;
 import View.ClipBoard.ConsultClipBoard;
+import View.ClipBoard.NewConsultCP;
 import View.Phone.RegisterPhone;
 
 /**
@@ -21,6 +22,7 @@ public class Page extends javax.swing.JFrame {
     public Page() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
     }
 
     /**
@@ -33,6 +35,7 @@ public class Page extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -47,6 +50,8 @@ public class Page extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Pera.png"))); // NOI18N
         jLabel1.setToolTipText("");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/smartphone (1).png"))); // NOI18N
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Clip.png"))); // NOI18N
         jMenu2.setText("Ordem de serviço");
@@ -101,14 +106,20 @@ public class Page extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(537, Short.MAX_VALUE)
+                .addGap(95, 95, 95)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(165, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 193, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -138,7 +149,9 @@ public class Page extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-        ConsultClipBoard.main(null);
+       
+        NewConsultCP.main(null);
+        // ConsultClipBoard.main(null);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
@@ -179,6 +192,7 @@ public class Page extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu BCadastrarTelefone;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
