@@ -6,9 +6,10 @@
 package View.Page;
 
 import View.ClipBoard.ClipBoard;
-import View.ClipBoard.ConsultClipBoard;
 import View.ClipBoard.NewConsultCP;
-import View.Phone.RegisterPhone;
+import View.Location.Location;
+import View.Location.RegisterLocation;
+import javax.swing.JFrame;
 
 /**
  *
@@ -75,7 +76,7 @@ public class Page extends javax.swing.JFrame {
         jMenuBar1.add(jMenu2);
 
         BCadastrarTelefone.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Mobile Phone.png"))); // NOI18N
-        BCadastrarTelefone.setText("Telefone");
+        BCadastrarTelefone.setText("Estoque");
         BCadastrarTelefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BCadastrarTelefoneActionPerformed(evt);
@@ -129,16 +130,15 @@ public class Page extends javax.swing.JFrame {
     private void BCadastrarTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BCadastrarTelefoneActionPerformed
         // TODO add your handling code here:
         setVisible(false);
-        RegisterPhone rp = new RegisterPhone();
+        RegisterLocation rp = new RegisterLocation(new JFrame(), true);
         rp.setVisible(true);
     }//GEN-LAST:event_BCadastrarTelefoneActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
         setVisible(false);
-        RegisterPhone rp = new RegisterPhone();
-        rp.setVisible(true);
-        
+        Location rp = new Location();
+        rp.main(null);
         
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 

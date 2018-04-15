@@ -3,6 +3,7 @@
   <persistence-unit name="zneffos?zeroDateTimeBehavior=convertToNullPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>View.ClipBoard.Ordem</class>
+    <class>View.Location.Estoque</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/zNeffos?autoReconnect=true&amp;useSSL=false"/>
       <property name="javax.persistence.jdbc.user" value="sa"/>
