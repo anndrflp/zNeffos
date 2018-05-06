@@ -39,9 +39,6 @@ public class Printer {
         } catch (JRException ex) {
             Logger.getLogger(Page.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
     }   
-    
-    
+     
 }

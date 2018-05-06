@@ -387,15 +387,13 @@ public class Location extends JPanel {
         /* Create and display the form */
         EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JDialog frame = new JDialog(new JFrame(), true);
+                JDialog frame = new JDialog(new JFrame(), false);
                 frame.setContentPane(new Location());
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.pack();
                 frame.setLocationRelativeTo(null);
                 frame.setResizable(false);
                 frame.setVisible(true);
-
-                
             }
         });
     }
