@@ -19,9 +19,10 @@ public class RegisterLocation extends javax.swing.JDialog {
     public RegisterLocation(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setDefaultCloseOperation(this.DISPOSE_ON_CLOSE);
         this.setLocationRelativeTo(null);
         this.setResizable(false);
-        this.setDefaultCloseOperation(this.DISPOSE_ON_CLOSE);
+        
     }
 
     /**
@@ -192,6 +193,7 @@ public class RegisterLocation extends javax.swing.JDialog {
                     }
                 });
                 dialog.setVisible(true);
+                dialog.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             }
         });
     }

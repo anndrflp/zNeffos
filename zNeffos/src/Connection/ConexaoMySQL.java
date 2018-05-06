@@ -15,6 +15,7 @@ public class ConexaoMySQL {
  
        public static String status = "Não conectou...";
        public static Connection connection = null; 
+       public static ResultSet rs;
  
         public ConexaoMySQL() {
  
@@ -92,12 +93,13 @@ public class ConexaoMySQL {
     
     public static void Consult(String query) throws SQLException{
         Statement st = connection.createStatement();
-        ResultSet rs = st.executeQuery(query);
+        rs = st.executeQuery(query);
         
-        while(rs.next()){
+      /*  while(rs.next()){
             int id = rs.getInt("ID");
             String name = rs.getString("NOME");
             System.out.println(id + " Com o nome de: " + name);
         }
+       */
     }
 }

@@ -419,6 +419,7 @@ public class ClipBoard extends javax.swing.JFrame {
 
     private void JpessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JpessoaActionPerformed
         // TODO add your handling code here:
+       
     }//GEN-LAST:event_JpessoaActionPerformed
 
     private void JcpfcnpjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JcpfcnpjActionPerformed
@@ -471,7 +472,6 @@ public class ClipBoard extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                
                 new ClipBoard().setVisible(true);
             }
         });

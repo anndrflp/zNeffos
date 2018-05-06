@@ -5,7 +5,7 @@ import Objects.Adress.Adress;
 import Objects.People.People;
 import Objects.Phone.Phone;
 import View.Page.Page;
-import View.Start;
+import View.Page.Start;
 import java.sql.SQLException;
 
 
@@ -22,9 +22,7 @@ public class ZNeffos {
         // TODO code application logic here]
         ConexaoMySQL conn = new ConexaoMySQL();
         conn.getConexaoMySQL();
-        
-       
-       Start.main(null);
+        Start.main(null);
         
        
         
