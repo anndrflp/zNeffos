@@ -31,7 +31,7 @@ public class Printer {
         try {
             ConexaoMySQL.Consult(query);
             JRResultSetDataSource relatService = new JRResultSetDataSource(cn.rs);
-            JasperPrint jpPrint = JasperFillManager.fillReport("src/Relatorio/Os.jasper" ,new HashMap(), relatService);
+            JasperPrint jpPrint = JasperFillManager.fillReport("C:\\Relatorio\\Os.jasper" ,new HashMap(), relatService);
             JasperViewer jv = new JasperViewer(jpPrint, false);
             jv.setVisible(true);
          } catch (SQLException ex) {

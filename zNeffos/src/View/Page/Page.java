@@ -10,7 +10,6 @@ import View.ClipBoard.CC;
 import View.ClipBoard.ClipBoard;
 import View.ClipBoard.Printer;
 import View.Location.Location;
-import View.Location.RegisterLocation;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.logging.Level;
