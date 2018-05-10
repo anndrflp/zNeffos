@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /**
  *
@@ -25,6 +26,7 @@ public class ClipBoard extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
+        
     }
 
     /**
@@ -419,7 +421,7 @@ public class ClipBoard extends javax.swing.JFrame {
 
     private void JpessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JpessoaActionPerformed
         // TODO add your handling code here:
-       
+        
     }//GEN-LAST:event_JpessoaActionPerformed
 
     private void JcpfcnpjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JcpfcnpjActionPerformed
@@ -442,6 +444,15 @@ public class ClipBoard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Jfone2ActionPerformed
 
+    public JTextField getJpessoa() {
+        return Jpessoa;
+    }
+
+    public void setJpessoa(String Jpessoa) {
+        this.Jpessoa.setText(Jpessoa);
+    }
+
+    
     /**
      * @param args the command line arguments
      */
