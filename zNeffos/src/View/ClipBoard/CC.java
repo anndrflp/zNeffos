@@ -160,6 +160,8 @@ public class CC extends JPanel {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), clienteField, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
+        clienteField.addActionListener(formListener);
+
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.cpfcnpj}"), cpfcnpjField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
@@ -421,6 +423,9 @@ public class CC extends JPanel {
             else if (evt.getSource() == jButton1) {
                 CC.this.jButton1ActionPerformed(evt);
             }
+            else if (evt.getSource() == clienteField) {
+                CC.this.clienteFieldActionPerformed(evt);
+            }
         }
 
         public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -518,6 +523,10 @@ public class CC extends JPanel {
         
         
     }//GEN-LAST:event_masterTableMousePressed
+
+    private void clienteFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clienteFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_clienteFieldActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

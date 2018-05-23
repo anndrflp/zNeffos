@@ -26,7 +26,7 @@ public class ClipBoard extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         this.setResizable(false);
-        
+        setJpessoa("teste");
     }
 
     /**
